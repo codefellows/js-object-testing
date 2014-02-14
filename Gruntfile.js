@@ -3,7 +3,8 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		simplemocha: {
 			options: {
-				timeout: 3000
+				timeout: 3000,
+				useColors: false
 				// I saw this in a mocha-phantomjs pull request
 				// Mocha.reporters.Base.useColors = false
 			},
