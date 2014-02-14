@@ -12,8 +12,21 @@ describe('Book object tests', function(){
     it('book should be truthy (exists)', function(){
       expect(book).to.be.ok;
     });
-    it('book should have author property', function() {
-      expect(book).to.have.property('author');
-    })
+    it('book should not have author property', function() {
+      expect(book).to.not.have.property('author');
+    });
+    it('book author property is undefined', function() {
+      expect(book.author).to.be.an.undefined;
+    });
+    it('book should not have author title', function() {
+      expect(book).to.not.have.property('title');
+    });
+    it('book getTitle returns the title', function () {
+      expect(book.getTitle()).to.equal('Learning JavaScript Design Patterns');
+    });
+    it('can\'t change the book title', function() {
+      book.title = "Steve Martin";
+      expect(book.getTitle()).to.equal('Learning JavaScript Design Patterns');
+    });
   })
 })
