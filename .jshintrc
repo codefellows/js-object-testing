@@ -8,10 +8,13 @@
     // MOCHA and CHAI
     "describe"   : false,
     "it"         : false,
+    "to"         : false,
+    "be"         : false,
     "before"     : false,
     "beforeEach" : false,
     "after"      : false,
-    "afterEach"  : false
+    "afterEach"  : false,
+    "equal"      : false
   },
   "globalstrict": true,
   "quotmark": true,
