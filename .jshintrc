@@ -2,9 +2,17 @@
   // Details: https://github.com/victorporof/Sublime-JSHint#using-your-own-jshintrc-options
   // Example: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
   // Documentation: http://www.jshint.com/docs/
-  "browser": true,
+  "node": true,
   "esnext": true,
-  "globals": {},
+  "globals": {
+    // MOCHA and CHAI
+    "describe"   : false,
+    "it"         : false,
+    "before"     : false,
+    "beforeEach" : false,
+    "after"      : false,
+    "afterEach"  : false
+  },
   "globalstrict": true,
   "quotmark": true,
   "smarttabs": true,
