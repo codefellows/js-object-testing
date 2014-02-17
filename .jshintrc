@@ -9,6 +9,7 @@
     "describe"   : false,
     "it"         : false,
     "to"         : false,
+    "ok"         : false,
     "be"         : false,
     "before"     : false,
     "beforeEach" : false,
