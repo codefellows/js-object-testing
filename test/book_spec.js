@@ -12,7 +12,7 @@ describe('Book object tests', function(){
 
   describe('constructor', function() {
     it('book should be truthy (exists)', function(){
-      expect(book).to.be.ok;
+      expect(book).to.be.an.object;
     });
     it('book should not have author property', function() {
       expect(book).to.not.have.property('author');
